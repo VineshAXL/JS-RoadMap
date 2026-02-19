@@ -1,0 +1,117 @@
+Today Goal:
+👉 JS run panna theriyanum
+👉 Variables strong ah puriyanum
+
+Step 1 – JavaScript Run Panradhu
+Option 1: Browser Console (Easy)
+
+Google Chrome open pannunga
+
+Right click → Inspect
+
+Console tab open pannunga
+
+Type:
+console.log("Hello Vinesh");
+
+Enter press pannunga.
+
+Option 2: VS Code (Recommended)
+
+VS Code install pannunga
+
+New folder create pannunga → javascript-pro
+
+Inside create file → index.html
+
+Paste this:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Day 1</title>
+</head>
+<body>
+
+<h1>JavaScript Practice</h1>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+4 Same folder la script.js create pannunga
+
+Add this:
+
+console.log("JavaScript Started 🔥");
+
+Browser la open pannitu → inspect → console check pannunga.
+
+Step 2 – Variables
+
+Variables na data store panna use pannuvom.
+
+1️⃣ let
+
+Value change panna mudiyum.
+
+let age = 21;
+age = 22;
+console.log(age);
+
+2️⃣ const
+
+Value change panna mudiyathu.
+
+const pi = 3.14;
+console.log(pi);
+
+3️⃣ var (Old method)
+
+Ipove use panna koodathu (but concept theriyanum)
+
+var name = "Vinesh";
+console.log(name);
+
+🟠 Difference (Important Interview Question)
+let	            const         	var
+Can change	    Cannot change	Old
+Block scope	    Block scope	    Function scope
+
+
+🧠 Practice Tasks (Compulsory)
+
+Write code for:
+
+1. Store your name in variable and print.
+
+    var name  = "VineshKumar";
+
+2. Store your age and increase by 1.
+
+    let age = 29;
+
+    age +=1;
+
+3. Create 3 variables (name, age, city) and print in one console.log.
+
+var name = "VineshKumar";
+var age = 29;
+var city = "Chennai";
+
+console.log("My name is "+name+ ", I am "+age+ " years old, from "+ city);
+
+
+4. Create const variable for country.
+
+const city = "Coimbatore";
+
+Example output:
+
+My name is Vinesh, I am 21 years old, from Chennai
+
+🎯 Today Target
+
+✔ Console use panna theriyanum
+✔ let & const difference clear ah irukanum
+✔ 10–15 small examples type pannirukanum

@@ -1,0 +1,84 @@
+Day 4 – switch Statement + More Logic Practice
+
+⏰ Time: 2–3 Hours
+🎯 Goal: Multiple conditions handle panna theriyanum
+
+🟢 1️⃣ switch Statement
+
+👉 Mostly menu systems / fixed values use pannuvom
+
+let day = 2;
+
+switch(day) {
+    case 1:
+        console.log("Monday");
+        break;
+          case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    default:
+        console.log("Invalid Day");
+}
+⚠ break very important. Illati next cases run aagum.
+🟡 2️⃣ Example – Simple Calculator using switch
+let num1 = 10;
+let num2 = 5;
+let operator = "+";
+
+switch(operator) {
+    case "+":
+        console.log(num1 + num2);
+        break;
+    case "-":
+        console.log(num1 - num2);
+        break;
+    case "*":
+        console.log(num1 * num2);
+        break;
+          case "/":
+        console.log(num1 / num2);
+        break;
+    default:
+        console.log("Invalid Operator");
+}
+🟠 3️⃣ Nested if Practice (Logic Strong Pannanum)
+ATM Example:
+let balance = 10000;
+let withdraw = 3000;
+
+if (withdraw <= balance) {
+    if (withdraw % 100 === 0) {
+        console.log("Collect Cash");
+    } else {
+        console.log("Enter amount in 100 multiples");
+    }
+} else {
+    console.log("Insufficient Balance");
+}
+
+💥 Practice Tasks (Compulsory)
+
+1️⃣ Day name print using switch + prompt
+2️⃣ Traffic light system (Red, Yellow, Green)
+3️⃣ Simple menu program (1 → Add, 2 → Subtract)
+4️⃣ Check number positive / negative / zero
+5️⃣ Vowel or consonant checker
+
+🔥 Challenge
+
+Create electricity bill calculator:
+
+0–100 units → ₹5 per unit
+
+101–200 → ₹7 per unit
+
+Above 200 → ₹10 per unit
+
+🎯 Today Target
+
+✔ switch fully clear
+✔ break concept clear
+✔ 20 logic examples type pannu

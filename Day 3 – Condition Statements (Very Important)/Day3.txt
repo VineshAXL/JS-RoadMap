@@ -1,0 +1,85 @@
+📅 Day 3 – Condition Statements (Very Important 🔥)
+
+⏰ Time: 2–3 Hours
+🎯 Goal: Decision making logic strong aaganum
+
+🟢 1️⃣ if Statement
+let age = 18;
+
+if (age >= 18) {
+    console.log("You can vote");
+}
+
+
+👉 Condition true na block execute aagum.
+
+🟡 2️⃣ if – else
+let age = 16;
+
+if (age >= 18) {
+    console.log("Eligible");
+} else {
+    console.log("Not Eligible");
+}
+
+🟠 3️⃣ if – else if – else
+let marks = 85;
+
+if (marks >= 90) {
+    console.log("Grade A");
+} else if (marks >= 75) {
+    console.log("Grade B");
+} else if (marks >= 50) {
+    console.log("Grade C");
+} else {
+    console.log("Fail");
+}
+
+🔵 4️⃣ Comparison + Logical Practice
+let age = 20;
+let hasID = true;
+
+if (age >= 18 && hasID === true) {
+    console.log("Allowed inside");
+}
+
+🟣 5️⃣ Nested if
+let username = "admin";
+let password = "1234";
+
+if (username === "admin") {
+    if (password === "1234") {
+        console.log("Login Success");
+    } else {
+        console.log("Wrong Password");
+    }
+} else {
+    console.log("Wrong Username");
+}
+
+💥 Mini Tasks (Compulsory)
+
+1️⃣ Even / Odd Checker
+2️⃣ Biggest of 3 Numbers
+3️⃣ Simple ATM withdrawal condition
+4️⃣ Grade calculator using prompt
+5️⃣ Check leap year
+
+🔥 Challenge Task (Pro Start 😎)
+
+Create login system using prompt:
+
+let user = prompt("Enter username");
+let pass = prompt("Enter password");
+
+if (user === "vinesh" && pass === "12345") {
+    console.log("Login Success");
+} else {
+    console.log("Invalid Credentials");
+}
+
+🎯 Today Focus
+
+✔ Always use ===
+✔ Practice logical operators
+✔ Type minimum 15 examples

@@ -1,0 +1,64 @@
+Day 6 – Functions (Reusable Power 🔥)
+
+⏰ Time: 2–3 Hours
+🎯 Goal: Code reuse panna theriyanum
+
+🟢 1️⃣ What is Function?
+
+👉 Reusable block of code
+
+function greet() {
+    console.log("Hello Vinesh 🔥");
+}
+
+greet(); // function call
+
+🟡 2️⃣ Function with Parameters
+function greet(name) {
+    console.log("Hello " + name);
+}
+
+greet("Vinesh");
+greet("Kumar");
+🟠 3️⃣ Function with Return
+function add(a, b) {
+    return a + b;
+}
+
+let result = add(10, 5);
+console.log(result);
+
+🟠 3️⃣ Function with Return
+function add(a, b) {
+    return a + b;
+}
+
+let result = add(10, 5);
+console.log(result);
+
+🟣 5️⃣ Default Parameter
+function greet(name = "Guest") {
+    console.log("Hello " + name);
+}
+
+greet();
+greet("Vinesh");
+
+💥 Practice Tasks (Compulsory)
+
+1️⃣ Create function to find square
+2️⃣ Create function to find biggest of 2 numbers
+3️⃣ Create function to calculate simple interest
+4️⃣ Create function for grade calculation
+5️⃣ Create function for factorial
+
+🔥 Mini Project (Important)
+
+Create full calculator using functions:
+
+function add(a,b){ return a+b }
+function sub(a,b){ return a-b }
+function mul(a,b){ return a*b }
+function div(a,b){ return a/b }
+
+console.log(add(5,3));

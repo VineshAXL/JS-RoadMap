@@ -1,0 +1,53 @@
+Day 8 – Arrays Basics
+
+⏰ 2–3 Hours
+🎯 Goal: Multiple values handle panna theriyanum
+
+🟢 1️⃣ What is Array?
+
+👉 One variable la multiple values store panna use pannuvom.
+
+let fruits = ["Apple", "Mango", "Orange"];
+
+console.log(fruits);
+console.log(fruits[0]); // Apple
+
+👉 Index always 0 la start aagum.
+
+🟡 2️⃣ Change Value
+fruits[1] = "Banana";
+console.log(fruits);
+
+🟠 3️⃣ Array Methods (Important 🔥)
+push() – add at end
+fruits.push("Grapes");
+
+pop() – remove last
+fruits.pop();
+
+shift() – remove first
+fruits.shift();
+
+unshift() – add at beginning
+fruits.unshift("Pineapple");
+
+🔵 4️⃣ Loop through Array
+let numbers = [10, 20, 30];
+
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+
+⚠ .length very important.
+
+💥 Practice Tasks (Compulsory)
+
+1️⃣ Create array of 5 student names
+2️⃣ Print all using loop
+3️⃣ Add 2 new names
+4️⃣ Remove one name
+5️⃣ Find total of number array
+
+🔥 Challenge
+
+Find largest number in array (without Math.max)

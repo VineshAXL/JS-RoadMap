@@ -62,3 +62,9 @@ function mul(a,b){ return a*b }
 function div(a,b){ return a/b }
 
 console.log(add(5,3));
+
+🎯 Today Focus
+
+✔ Loop structure full clarity
+✔ Condition inside loop
+✔ Minimum 20 loop examples

@@ -79,3 +79,4 @@ console.log("Division:", num1 / num2);
 3. Create discount calculator
 
 4. Try strict equality example
+

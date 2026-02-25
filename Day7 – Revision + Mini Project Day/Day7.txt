@@ -1,0 +1,95 @@
+📅 Day 7 – Revision + Mini Project Day 🚀
+
+⏰ Time: 2–3 Hours
+🎯 Goal: Week 1 full clear + 1 small real project build panna
+
+🧠 Step 1 – Quick Revision (1 Hour)
+
+Revise:
+
+✅ Variables (let, const)
+
+✅ Data Types
+
+✅ Operators
+
+✅ if / else / switch
+
+✅ Loops
+
+✅ Functions
+
+👉 Without seeing notes, try writing:
+
+Even/Odd function
+
+Factorial using loop
+
+Biggest of 3 numbers
+
+Multiplication table
+
+If you can write without help = Strong Foundation 💯
+
+💻 Step 2 – Mini Project (Compulsory)
+🔥 Project: Simple Calculator with Buttons
+
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+
+<h2>Simple Calculator</h2>
+
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number">
+
+<br><br>
+<button onclick="calculate('+')">Add</button>
+<button onclick="calculate('-')">Subtract</button>
+<button onclick="calculate('*')">Multiply</button>
+<button onclick="calculate('/')">Divide</button>
+
+<h3 id="result"></h3>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+script.js
+function calculate(operator) {
+    let num1 = Number(document.getElementById("num1").value);
+    let num2 = Number(document.getElementById("num2").value);
+    let result;
+
+    if (operator === "+") {
+        result = num1 + num2;
+    } else if (operator === "-") {
+        result = num1 - num2;
+    } else if (operator === "*") {
+        result = num1 * num2;
+        } else if (operator === "/") {
+        result = num1 / num2;
+    }
+
+    document.getElementById("result").innerText = "Result: " + result;
+}
+🎯 Today Target
+
+✔ Calculator working ah irukanum
+✔ Logic clear ah irukanum
+✔ Errors fix panna try pannu
+
+🏆 After Week 1
+
+Nee ippo:
+
+JS basics strong
+
+Logic build panna theriyum
+
+Small apps build panna mudiyum

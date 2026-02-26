@@ -41,7 +41,28 @@ let students = [
 ];
 
 // 👉 Filter students with marks above 50
-// 👉 Get only names using map
+
 
 let pass = students.filter(students=>students.marks>50);
 console.log(pass);
+
+// 👉 Get only names using map
+let nn = pass.map(students=> students.name);
+console.log(nn);
+
+// 🧠 Ultra Important Concept
+
+// filter → remove unwanted data
+// map → modify data
+
+// Together use panna dhan real power 🔥
+
+// Example:
+
+let toppers = students
+  .filter(s => s.marks > 50)
+  .map(s => s.name);
+
+console.log(toppers);
+
+// One line powerful code 😎🔥

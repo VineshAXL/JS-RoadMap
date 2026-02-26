@@ -1,0 +1,174 @@
+📅 Day 9 – Advanced Array Methods (Very Important 🔥)
+
+⏰ 2–3 Hours
+🎯 Goal: Modern JavaScript style learn panna
+
+🟢 1️⃣ forEach() – Loop Modern Way
+let numbers = [10, 20, 30];
+
+numbers.forEach(function(num) {
+    console.log(num);
+});
+
+👉 Same as loop, but cleaner.
+
+🟡 2️⃣ map() – Create New Array
+let numbers = [1, 2, 3, 4];
+
+let doubled = numbers.map(function(num) {
+    return num * 2;
+});
+
+console.log(doubled);
+
+👉 Output: [2, 4, 6, 8]
+
+🟠 3️⃣ filter() – Filter Data
+let numbers = [10, 15, 20, 25];
+
+let even = numbers.filter(function(num) {
+    return num % 2 === 0;
+});
+
+console.log(even);
+
+👉 Output: [10, 20]
+
+🔵 4️⃣ Arrow Function Version (Pro Style 😎)
+let numbers = [1,2,3];
+
+let result = numbers.map(num => num * 3);
+console.log(result);
+
+🟣 Difference Summary
+Method	    Purpose
+forEach	    Just loop
+map	        Transform
+filter	    Condition filter
+
+💥 Practice Tasks (Compulsory)
+1️⃣ Double all numbers using map
+2️⃣ Filter odd numbers
+3️⃣ Convert all names to uppercase
+4️⃣ Find numbers greater than 50
+5️⃣ Sum array using loop
+
+🔥 Challenge
+
+Given:
+
+let students = [
+  {name: "Vinesh", marks: 80},
+  {name: "Arun", marks: 45},
+  {name: "Kumar", marks: 90}
+];
+
+👉 Filter students with marks above 50
+👉 Get only names using map
+
+🎯 Today Target
+
+✔ map & filter difference clear
+✔ Arrow function practice
+✔ Minimum 15 examples
+
+
+More Details in this Array
+
+🟢 1️⃣ forEach() – Modern Loop
+🧠 What it does?
+
+👉 Array la irukkura each element ah one by one access pannum.
+👉 But new array create pannathu illa.
+👉 Just loop pannum.
+
+🔹 Basic Example
+let numbers = [10, 20, 30];
+
+numbers.forEach(function(num) {
+    console.log(num);
+});
+How it works internally:
+Step 1 → num = 10
+Step 2 → num = 20
+Step 3 → num = 30
+
+Same as for loop but cleaner.
+
+🔹 With Arrow Function
+numbers.forEach(num => console.log(num));
+
+Clean + Pro Style 😎
+⚠ Important
+
+❌ forEach return value kudukkathu
+❌ You cannot break or stop like normal loop
+
+🟡 2️⃣ map() – Transform & Create New Array
+🧠 What it does?
+
+👉 Original array ah change pannathu illa
+👉 New array create pannum
+👉 Each element ah modify pannum
+
+🔹 Example
+let numbers = [1, 2, 3, 4];
+
+let doubled = numbers.map(function(num) {
+    return num * 2;
+});
+
+console.log(doubled);
+
+Output:
+
+[2, 4, 6, 8]
+🧠 Internal Logic
+
+Original → [1,2,3,4]
+
+map process:
+1 → 2
+2 → 4
+3 → 6
+4 → 8
+
+New array ready ✅
+
+🔹 Arrow Function Version
+
+let doubled = numbers.map(num => num * 2);
+
+
+🟠 3️⃣ filter() – Condition Based Selection
+🧠 What it does?
+
+👉 Condition check pannum
+👉 True return aana values mattum new array la varum
+
+let numbers = [10, 15, 20, 25];
+
+let even = numbers.filter(function(num) {
+    return num % 2 === 0;
+});
+
+console.log(even);
+
+Output:
+
+[10, 20]
+
+🧠 Internal Thinking
+
+10 % 2 === 0 → true → include
+15 % 2 === 0 → false → skip
+20 → true → include
+25 → false → skip
+
+🔵 Arrow Function Clean Version
+let even = numbers.filter(num => num % 2 === 0);
+🟣 Difference Clear Table
+Method	    Creates New Array?	    Purpose
+forEach	    ❌ No	              Just loop
+map	        ✅ Yes                 Transform data
+filter	    ✅ Yes	              Filter by condition

@@ -51,3 +51,106 @@ for (let i = 0; i < numbers.length; i++) {
 🔥 Challenge
 
 Find largest number in array (without Math.max)
+
+
+
+
+Array in more Details
+
+🟢 1️⃣ What is Array? (Deep Understanding)
+
+👉 Normal variable = 1 value store pannum
+👉 Array = multiple values store pannum (single variable la)
+
+❌ Without Array
+let student1 = "Arun";
+let student2 = "Vijay";
+let student3 = "Ajay";
+
+Too many variables 😵
+
+✅ With Array
+let students = ["Arun", "Vijay", "Ajay"];
+
+Clean + professional way ✔
+
+🧠 How Array Works Internally
+Index   Value
+0       Arun
+1       Vijay
+2       Ajay
+
+👉 Index always starts from 0
+👉 Last index = length - 1
+
+console.log(students.length); // 3
+
+🟡 2️⃣ Change Value (Overwrite)
+
+Array mutable (change panna mudiyum)
+
+let fruits = ["Apple", "Mango", "Orange"];
+
+fruits[1] = "Banana";
+
+console.log(fruits);
+// ["Apple", "Banana", "Orange"]
+
+👉 Mango replace aagiduchu.
+
+🟠 3️⃣ Important Array Methods (Very Important 🔥)
+
+Think array like train compartments 🚂
+
+🔹 push() → Add at END
+
+fruits.push("Grapes");
+
+Before:
+
+["Apple", "Banana", "Orange"]
+
+After:
+
+["Apple", "Banana", "Orange", "Grapes"]
+
+🔹 pop() → Remove from END
+
+fruits.pop();
+
+Last item remove aagum.
+
+🔹 shift() → Remove from START
+fruits.shift();
+
+First item remove aagum.
+
+🔹 unshift() → Add at START
+fruits.unshift("Pineapple");
+
+Beginning la add aagum.
+
+🔵 4️⃣ Loop Through Array (Most Important Concept)
+
+Why loop?
+
+👉 Multiple values irukku
+👉 One by one access panna loop use pannuvom
+
+let numbers = [10, 20, 30];
+
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+How it works:
+Step 1:
+i = 0 → numbers[0] → 10
+
+Step 2:
+i = 1 → numbers[1] → 20
+
+Step 3:
+i = 2 → numbers[2] → 30
+
+Stop when i < length false aagum.
+

@@ -93,3 +93,10 @@ console.log(person); // { name: "John", age: 25, country: "USA" }
 
 
 This is a very basic introduction to JavaScript. What would you like to learn next? 😊
+
+
+
+join, stroe , trigger
+
+use state vichu count incress,one to multile child 
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- 1️⃣ Create HTML with one heading and button
+             2️⃣ Button click pannumbodhu heading text change aaganum
+             3️⃣ Change heading color dynamically
+             4️⃣ Add background color change
+             5️⃣ Console la element print pannu -->
+      
+             <h1 id="title">Hello I am Vinesh</h1>
+             <button id="btn" onclick="changeText()">Click</button>
+
+        <script>
+    
+function changeText() {
+      
+    document.getElementById("title").innerText = "Text Changed 🔥";
+    let a = document.getElementById("title")
+    a.innerText = "Hello";
+   
+    a.style.color = "Green";
+    a.style.background = "Red";
+    console.log(a);
+    console.log("Button Clicked");
+ 
+}
+
+        </script>
+    </body>
+</html>

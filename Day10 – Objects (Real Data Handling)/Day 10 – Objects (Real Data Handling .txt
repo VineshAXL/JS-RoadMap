@@ -1,0 +1,74 @@
+📅 Day 10 – Objects (Real Data Handling 🔥)
+
+⏰ 2–3 Hours
+🎯 Goal: Real data structure puriyanum
+
+🟢 1️⃣ What is Object?
+
+👉 Real world entity represent panna use pannuvom.
+
+let student = {
+    name: "Vinesh",
+    age: 21,
+    city: "Chennai"
+};
+console.log(student);
+
+🟡 2️⃣ Access Properties
+
+Dot notation
+console.log(student.name);
+
+Bracket notation
+console.log(student["age"]);
+
+🟠 3️⃣ Update Property
+
+student.age = 22;
+console.log(student);
+
+🔵 4️⃣ Add New Property
+student.course = "Full Stack";
+
+🟣 5️⃣ Object inside Array (Very Important 🔥)
+let students = [
+    {name: "Vinesh", marks: 80},
+    {name: "Arun", marks: 45},
+    {name: "Kumar", marks: 90}
+];
+
+console.log(students[0].name);
+
+🟤 6️⃣ Loop Through Object Array
+students.forEach(student => {
+    console.log(student.name + " - " + student.marks);
+});
+
+💥 Practice Tasks (Compulsory)
+
+1️⃣ Create object for mobile (brand, price, color)
+2️⃣ Create 3 student objects inside array
+3️⃣ Print all names using loop
+4️⃣ Increase marks by 5 using map
+5️⃣ Filter students above 50
+
+🔥 Challenge
+
+Create product list:
+
+let products = [
+  {name: "Laptop", price: 50000},
+  {name: "Laptop", price: 50000},
+  {name: "Mobile", price: 20000},
+  {name: "Tablet", price: 15000}
+];
+
+👉 Print only products above 18000
+👉 Add new product
+👉 Increase all prices by 10%
+
+🎯 Today Target
+
+✔ Dot vs bracket clear
+✔ Object inside array strong
+✔ map + filter + object combine panna theriyanum

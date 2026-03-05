@@ -1,0 +1,81 @@
+📅 Day 13 – Create Elements Dynamically (To-Do App Base 🔥)
+
+⏰ 2–3 Hours
+🎯 Goal: JavaScript use panni new elements create panna theriyanum
+
+🟢 1️⃣ createElement()
+<ul id="list"></ul>
+<button id="add">Add Item</button>
+let btn = document.getElementById("add");
+let list = document.getElementById("list");
+
+btn.addEventListener("click", function() {
+    let li = document.createElement("li");
+    li.innerText = "New Item 🔥";
+    list.appendChild(li);
+});
+
+👉 createElement() → New element create
+👉 appendChild() → Add to DOM
+
+🟡 2️⃣ Remove Element
+li.remove();
+
+OR
+
+list.removeChild(li);
+🟠 3️⃣ Full To-Do App (Basic Version 🔥)
+HTML
+<input type="text" id="taskInput" placeholder="Enter task">
+<button id="addTask">Add</button>
+<ul id="taskList"></ul>
+JavaScript
+let addBtn = document.getElementById("addTask");
+let input = document.getElementById("taskInput");
+let ul = document.getElementById("taskList");
+
+addBtn.addEventListener("click", function() {
+
+    if (input.value === "") return;
+
+    let li = document.createElement("li");
+    li.innerText = input.value;
+
+    let delBtn = document.createElement("button");
+    delBtn.innerText = "Delete";
+
+    delBtn.addEventListener("click", function() {
+        li.remove();
+    });
+
+    li.appendChild(delBtn);
+    ul.appendChild(li);
+
+    input.value = "";
+});
+🔵 What You Learned Today
+
+✔ createElement
+✔ appendChild
+✔ remove
+✔ Dynamic button creation
+✔ Nested event listener
+
+💥 Practice Tasks
+
+1️⃣ Add task only if input not empty
+2️⃣ Add “Complete” button
+3️⃣ Strike through text when completed
+4️⃣ Count total tasks
+5️⃣ Add Enter key support
+
+🔥 Challenge (Pro Start 😎)
+
+Store tasks in array and console log them.
+(Real app concept start 🔥)
+
+🎯 Today Target
+
+✔ To-Do app working ah irukanum
+✔ Add & Delete working
+✔ No errors

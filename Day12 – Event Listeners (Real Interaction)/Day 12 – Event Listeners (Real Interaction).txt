@@ -1,0 +1,90 @@
+📅 Day 12 – Event Listeners (Real Interaction 🔥)
+
+🎯 Goal: User action handle panna theriyanum
+
+🟢 1️⃣ What is Event?
+
+Event = User action
+
+Examples:
+
+click
+
+mouseover
+
+keypress
+
+submit
+
+🟡 2️⃣ addEventListener() (Correct Method 🔥)
+
+HTML:
+
+<h1 id="title">Hello</h1>
+<button id="btn">Click Me</button>
+
+JS:
+
+let button = document.getElementById("btn");
+
+button.addEventListener("click", function() {
+    document.getElementById("title").innerText = "Button Clicked 🔥";
+});
+
+👉 Best practice → onclick use panna koodathu.
+👉 addEventListener use pannanum.
+
+🟠 3️⃣ Counter Example
+
+HTML:
+
+<h2 id="count">0</h2>
+<button id="increase">Increase</button>
+
+JS:
+
+let count = 0;
+let btn = document.getElementById("increase");
+
+btn.addEventListener("click", function() {
+    count++;
+    document.getElementById("count").innerText = count;
+});
+🔵 4️⃣ Change Background Color
+document.body.addEventListener("click", function() {
+    document.body.style.backgroundColor = "lightblue";
+});
+🟣 5️⃣ Input Field Example
+
+HTML:
+
+<input type="text" id="nameInput">
+<button id="show">Show</button>
+<p id="output"></p>
+
+JS:
+
+document.getElementById("show").addEventListener("click", function() {
+    let value = document.getElementById("nameInput").value;
+    document.getElementById("output").innerText = value;
+});
+💥 Practice Tasks (Compulsory)
+
+1️⃣ Create counter with Increase & Decrease button
+2️⃣ Toggle button (Show / Hide text)
+3️⃣ Change background color on button click
+4️⃣ Display typed text below input
+5️⃣ Create simple like button (❤️ 0 → 1 → 2...)
+
+🔥 Challenge
+
+Create button → Click panna random color change aaganum.
+
+Hint:
+
+Math.floor(Math.random() * 255)
+🎯 Today Target
+
+✔ addEventListener clear
+✔ value property clear
+✔ count variable control clear

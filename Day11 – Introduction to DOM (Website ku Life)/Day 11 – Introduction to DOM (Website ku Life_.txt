@@ -1,0 +1,57 @@
+📅 Day 11 – Introduction to DOM (Website ku Life 🔥)
+
+⏰ 2–3 Hours
+🎯 Goal: HTML elements ah JavaScript la control panna theriyanum
+
+🟢 1️⃣ What is DOM?
+
+DOM = Document Object Model
+
+👉 Browser HTML ah object mathiri convert pannum.
+👉 JavaScript use panni adha change panna mudiyum.
+
+Example HTML:
+
+<h1 id="title">Hello</h1>
+<button id="btn">Click Me</button>
+
+🟡 2️⃣ getElementById()
+let heading = document.getElementById("title");
+console.log(heading);
+
+👉 ID use panni element select pannuvom.
+
+🟠 3️⃣ Change Text
+heading.innerText = "Hello Vinesh 🔥";
+
+🔵 4️⃣ querySelector()
+let btn = document.querySelector("#btn");
+console.log(btn);
+
+👉 CSS selector style la select panna use pannuvom.
+
+🟣 5️⃣ Change Style Using JS
+heading.style.color = "red";
+heading.style.fontSize = "40px";
+
+💥 Practice Tasks (Compulsory)
+
+1️⃣ Create HTML with one heading and button
+2️⃣ Button click pannumbodhu heading text change aaganum
+3️⃣ Change heading color dynamically
+4️⃣ Add background color change
+5️⃣ Console la element print pannu
+
+🔥 Mini Task Example
+<h1 id="title">Original Text</h1>
+<button onclick="changeText()">Change</button>
+<script>
+function changeText() {
+    document.getElementById("title").innerText = "Text Changed 🔥";
+}
+</script>
+🎯 Today Target
+
+✔ DOM select panna clear
+✔ innerText usage clear
+✔ Style change panna theriyanum

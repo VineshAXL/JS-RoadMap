@@ -1,0 +1,70 @@
+<html>
+ <body>
+<!--Practice Tasks (Compulsory)
+1️⃣ Create counter with Increase & Decrease button
+2️⃣ Toggle button (Show / Hide text)
+3️⃣ Change background color on button click
+4️⃣ Display typed text below input
+5️⃣ Create simple like button (❤️ 0 → 1 → 2...) -->
+
+<p id = "count"></p>
+<button id="inc">Increase</button>
+<button id="dec">Decrease</button>
+ <br>
+<p id = "showtxt"></p>
+<button id="show">Show</button>
+<br>
+<p id="txtli"></p>  
+<input type= "text" id="input"/>
+
+
+
+    </body>
+    <script>
+        let count = 0;
+        let inc = document.getElementById("inc");
+        let dec = document.getElementById("dec");
+        let  txt =  document.getElementById("count");
+        let bod = document.getElementById("body");
+
+inc.addEventListener("click", function() {
+    count++;
+    txt.innerText = count;
+    
+    // document.getElementById("count").innerText = count;
+});
+dec.addEventListener("click", function(){
+    count--;
+    txt.innerText = count;
+    // document.getElementById("count").innerText = count;
+});
+
+
+let show = document.getElementById("show");
+let showtxt = document.getElementById("showtxt");
+show.addEventListener("click",function(){
+
+    if(show != "Show"){
+        show.innerText = "Hide";
+    showtxt.innerText = "Show";
+    show.style.color = "Green";
+    show.style.background = "Red";
+    
+    }else{
+         show.innerText = "Show";
+        showtxt.innerText = "";
+
+       show.style.color = "black";
+    show.style.background = "green";
+    }
+});
+
+let input = document.getElementById("input");
+let inputlis = document.getElementById("txtli");
+
+input.addEventListener("keyup", function(){
+
+inputlis.innerText = input.value;
+});
+    </script>
+</html>

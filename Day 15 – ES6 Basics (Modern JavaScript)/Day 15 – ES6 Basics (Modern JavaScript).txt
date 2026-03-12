@@ -1,0 +1,90 @@
+📅 Day 15 – ES6 Basics (Modern JavaScript 😎)
+
+⏰ 2–3 Hours
+🎯 Goal: Modern syntax comfortable aaganum
+
+🟢 1️⃣ Arrow Functions
+
+Old way:
+
+function add(a, b) {
+    return a + b;
+}
+
+New way:
+
+const add = (a, b) => {
+    return a + b;
+};
+
+Short version:
+
+const add = (a, b) => a + b;
+🟡 2️⃣ Template Literals (Very Important 🔥)
+
+Old:
+
+let name = "Vinesh";
+console.log("Hello " + name);
+
+New:
+
+let name = "Vinesh";
+console.log(`Hello ${name} 🔥`);
+
+👉 Backticks ` use pannanum.
+
+🟠 3️⃣ Destructuring (Power Concept)
+
+Array:
+
+let numbers = [10, 20];
+
+let [a, b] = numbers;
+console.log(a);
+
+Object:
+
+let student = {
+    name: "Vinesh",
+    age: 21
+};
+
+let { name, age } = student;
+console.log(name);
+🔵 4️⃣ Spread Operator (...)
+let arr1 = [1,2,3];
+let arr2 = [...arr1, 4,5];
+
+console.log(arr2);
+🟣 5️⃣ Rest Operator
+const sum = (...nums) => {
+    return nums.reduce((total, num) => total + num, 0);
+};
+
+console.log(sum(1,2,3,4));
+💥 Practice Tasks (Compulsory)
+
+1️⃣ Convert 5 normal functions to arrow
+2️⃣ Use template literal to print student details
+3️⃣ Destructure object inside array
+4️⃣ Merge 2 arrays using spread
+5️⃣ Create function using rest operator
+
+🔥 Challenge
+
+Given:
+
+let users = [
+  {name: "Vinesh", age: 21},
+  {name: "Arun", age: 22}
+];
+
+👉 Use map + destructuring to print
+Name: Vinesh, Age: 21
+
+🎯 Today Target
+
+✔ Arrow function clear
+✔ Template literal habit build
+✔ Destructuring comfortable

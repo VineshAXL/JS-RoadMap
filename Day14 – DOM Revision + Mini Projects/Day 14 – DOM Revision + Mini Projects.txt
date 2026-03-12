@@ -1,0 +1,75 @@
+📅 Day 14 – DOM Revision + Mini Projects 🚀
+
+(Week 2 Completion Day 🔥)
+
+⏰ 2–3 Hours
+🎯 Goal: DOM full clarity + 2 mini projects build panna
+
+🧠 Step 1 – Quick Revision (45 mins)
+
+Without notes try writing:
+
+getElementById
+
+querySelector
+
+addEventListener
+
+createElement
+
+appendChild
+
+remove
+
+value
+
+innerText
+
+👉 If you can write without seeing = DOM strong 💪
+
+💻 Mini Project 1 – Dark Mode Toggle 🌙
+HTML
+<button id="toggle">Toggle Dark Mode</button>
+JavaScript
+let btn = document.getElementById("toggle");
+
+btn.addEventListener("click", function() {
+    document.body.classList.toggle("dark");
+});
+CSS (Add inside style tag)
+.dark {
+    background-color: black;
+    color: white;
+}
+
+🔥 Use classList.toggle() – Very important concept.
+
+💻 Mini Project 2 – Live Character Counter ✍️
+HTML
+<textarea id="text" rows="4" cols="30"></textarea>
+<p id="count">0 Characters</p>
+JavaScript
+let textarea = document.getElementById("text");
+let counter = document.getElementById("count");
+
+textarea.addEventListener("input", function() {
+    let length = textarea.value.length;
+    counter.innerText = length + " Characters";
+});
+💥 Practice Tasks
+
+1️⃣ Form validation (empty input alert)
+2️⃣ Disable button until input typed
+3️⃣ Image show/hide toggle
+4️⃣ Like button with color change
+5️⃣ Create simple password show/hide
+
+🏆 After Week 2
+
+Nee ippo:
+
+✅ Arrays strong
+✅ Objects strong
+✅ DOM strong
+✅ Dynamic elements create panna theriyum
+✅ To-Do App build panna mudiyum

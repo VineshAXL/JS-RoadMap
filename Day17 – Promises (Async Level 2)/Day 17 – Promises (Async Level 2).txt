@@ -1,0 +1,121 @@
+📅 Day 17 – Promises (Async Level 2 🔥)
+
+⏰ 2–3 Hours
+🎯 Goal: Callback hell avoid panna theriyanum
+
+🟢 1️⃣ What is Promise?
+
+Promise = Future la complete aagum operation.
+
+3 States irukum:
+
+🟡 Pending
+
+🟢 Resolved
+
+🔴 Rejected
+
+🟡 2️⃣ Basic Promise Syntax
+let myPromise = new Promise((resolve, reject) => {
+
+    let success = true;
+
+    if (success) {
+        resolve("Operation Successful ✅");
+    } else {
+        reject("Operation Failed ❌");
+    }
+
+});
+
+myPromise
+    .then(result => console.log(result))
+    .catch(error => console.log(error));
+
+👉 resolve → success
+👉 reject → error
+👉 then() → handle success
+👉 catch() → handle error
+
+🟠 3️⃣ Promise with setTimeout Example
+let loginPromise = new Promise((resolve, reject) => {
+
+    setTimeout(() => {
+        let loginSuccess = true;
+
+        if (loginSuccess) {
+            resolve("Login Success 🔥");
+        } else {
+            reject("Invalid Credentials ❌");
+        }
+
+    }, 2000);
+
+});
+
+loginPromise
+    .then(msg => console.log(msg))
+    .catch(err => console.log(err));
+
+👉 2 seconds delay → result varum.
+
+🔵 4️⃣ Chaining Promises (Very Important 🔥)
+new Promise((resolve) => {
+    resolve(10);
+})
+.then(num => {
+    console.log(num);
+    return num * 2;
+})
+.then(result => {
+    console.log(result);
+});
+
+👉 Output:
+10
+20
+
+🟣 5️⃣ Real Life Example Simulation
+function checkUser() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("User Verified ✅");
+        }, 1000);
+    });
+}
+
+checkUser()
+    .then(msg => console.log(msg));
+🧠 Important Concept
+
+Promise makes async code:
+
+✔ Cleaner
+✔ Readable
+✔ Chainable
+
+💥 Practice Tasks (Compulsory)
+
+1️⃣ Create promise that resolves after 3 seconds
+2️⃣ Create promise that rejects if number < 18
+3️⃣ Chain 2 .then()
+4️⃣ Handle error using catch()
+5️⃣ Simulate payment success / failure
+
+🔥 Challenge
+
+Create function:
+
+Step 1: “Fetching Data…”
+
+Step 2: After 2 sec → “Data Received”
+
+Step 3: After 1 sec → “Data Processed”
+
+Use Promise chaining.
+
+🎯 Today Target
+
+✔ resolve vs reject clear
+✔ then chaining clear
+✔ catch usage clear

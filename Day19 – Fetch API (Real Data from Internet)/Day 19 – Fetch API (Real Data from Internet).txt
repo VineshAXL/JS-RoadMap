@@ -1,0 +1,90 @@
+📅 Day 19 – Fetch API (Real Data from Internet 🔥)
+
+⏰ 2–3 Hours
+🎯 Goal: API la irundhu data fetch panna theriyanum
+
+🟢 1️⃣ What is API?
+
+API = Server la irundhu data eduka use pannuvom
+
+👉 Example:
+
+Weather data
+
+User data
+
+Products
+
+🟡 2️⃣ Basic Fetch
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(res => res.json())
+    .then(data => console.log(data));
+
+👉 Steps:
+
+fetch → API call
+
+res.json() → convert to JS
+
+data → usable data
+
+🟠 3️⃣ Async/Await Version (Best Practice 🔥)
+async function getUsers() {
+    let res = await fetch("https://jsonplaceholder.typicode.com/users");
+    let data = await res.json();
+
+    console.log(data);
+}
+
+getUsers();
+🔵 4️⃣ Display Data in HTML
+<ul id="userList"></ul>
+async function loadUsers() {
+    let res = await fetch("https://jsonplaceholder.typicode.com/users");
+    let users = await res.json();
+
+    let ul = document.getElementById("userList");
+
+    users.forEach(user => {
+        let li = document.createElement("li");
+        li.innerText = user.name;
+        ul.appendChild(li);
+    });
+}
+
+loadUsers();
+🟣 5️⃣ Error Handling
+async function fetchData() {
+    try {
+        let res = await fetch("https://wrong-url.com");
+        let data = await res.json();
+        console.log(data);
+    } catch (error) {
+        console.log("Error:", error);
+    }
+}
+💥 Practice Tasks (Compulsory)
+
+1️⃣ Fetch users and print names
+2️⃣ Display posts in HTML
+3️⃣ Show loading message before fetch
+4️⃣ Handle error properly
+5️⃣ Create button → click → fetch data
+
+🔥 Mini Project Idea
+
+👉 User List App
+
+Fetch users
+
+Show in UI
+
+Add loading text
+
+Add error message
+
+🎯 Today Target
+
+✔ fetch concept clear
+✔ async/await + fetch combo
+✔ Data display in UI

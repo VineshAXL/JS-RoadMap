@@ -1,0 +1,98 @@
+📅 Day 18 – Async / Await (Modern Async 🔥)
+
+⏰ 2–3 Hours
+🎯 Goal: Promise ah easy ah handle panna theriyanum
+
+🟢 1️⃣ What is async / await?
+
+👉 Promise ah clean ah write panna use pannuvom
+👉 .then() ku replacement 😎
+
+🟡 2️⃣ Basic Example
+function getData() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Data received 📦");
+        }, 2000);
+    });
+}
+
+async function fetchData() {
+    let result = await getData();
+    console.log(result);
+}
+
+fetchData();
+
+👉 await → Promise complete aagum vara wait pannum
+
+🟠 3️⃣ Without async (Old way)
+getData().then(result => console.log(result));
+
+👉 async/await → cleaner 💯
+
+🔵 4️⃣ Error Handling (try...catch 🔥)
+function checkLogin() {
+    return new Promise((resolve, reject) => {
+        let success = false;
+
+        if (success) {
+            resolve("Login Success");
+        } else {
+            reject("Login Failed");
+        }
+    });
+}
+
+async function login() {
+    try {
+        let result = await checkLogin();
+        console.log(result);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+login();
+🟣 5️⃣ Multiple Await
+function step1() {
+    return new Promise(res => setTimeout(() => res("Step 1"), 1000));
+}
+
+function step2() {
+    return new Promise(res => setTimeout(() => res("Step 2"), 1000));
+}
+
+async function process() {
+    let a = await step1();
+    console.log(a);
+
+    let b = await step2();
+    console.log(b);
+}
+
+process();
+💥 Practice Tasks (Compulsory)
+
+1️⃣ Create async function with setTimeout
+2️⃣ Convert promise code → async/await
+3️⃣ Handle error using try/catch
+4️⃣ Create fake API delay (2 sec)
+5️⃣ Print 3 steps using await
+
+🔥 Challenge
+
+Simulate order system:
+
+1️⃣ “Order placed”
+2️⃣ After 2 sec → “Preparing food”
+3️⃣ After 2 sec → “Out for delivery”
+4️⃣ After 2 sec → “Delivered”
+
+👉 Use async/await
+
+🎯 Today Target
+
+✔ async keyword clear
+✔ await usage clear
+✔ try/catch must practice
